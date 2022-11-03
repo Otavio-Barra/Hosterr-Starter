@@ -1,0 +1,90 @@
+:root {
+  --bkg-color: #f9f4e8;
+  --btn-color: #4977ea;
+  --text-color: #6d6d6d;
+}
+
+body {
+  background-color: var(--bkg-color);
+  height: 100vh;
+}
+.navegation-mobile {
+  display: none;
+}
+#menu-mobile {
+  display: none;
+}
+header {
+  padding-top: 3rem;
+  font-size: 1.2rem;
+}
+
+header .navegation,
+header .logo,
+header .login {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* main */
+
+main .container {
+  padding-top: 8rem;
+  column-gap: 7rem;
+  margin-bottom: 3rem;
+}
+main .content {
+  width: 48%;
+}
+
+main .content h1 {
+  font: 800 clamp(2.5rem, 4vw, 4.5rem) "Playfair Display", serif;
+  color: #000;
+  margin-bottom: 1.5rem;
+}
+
+main .content .text {
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  margin-bottom: 1rem;
+}
+main .content form #email {
+  width: 45%;
+  padding: 20px;
+  border: none;
+  margin-right: 1em;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #000;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+main .content .check {
+  display: flex;
+  align-items: center;
+}
+
+main .content .check img {
+  margin-right: 1rem;
+}
+main .content .check .second-text {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+main .img {
+  width: 40%;
+}
+main .img img {
+  width: 100%;
+}
+footer .social a {
+  margin-right: 2rem;
+}
+footer .perfil {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
