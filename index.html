@@ -1,91 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@100;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Playfair+Display:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/buttons.css" />
 
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/responsive.css">
-  <link rel="stylesheet" href="./css/buttons.css">
+    <script src="./index.js" defer></script>
 
-  <script src="./index.js" defer></script>
+    <title>Hosterr</title>
+  </head>
 
-  <title>Hosterr</title>
-
-</head>
-
-<body>
-  <header>
-    <div class="container">
-      <div class="logo">
-        <img src="./Assets/Logo.svg" alt="Logo-Menu">
-        <button class="hiring">Hosterr is hiring!</button>
-      </div>
-      <nav class="navegation">
-        <a href="#">Plans</a>
-        <a href="#">Find Domain</a>
-        <a href="#">Why Hosterr</a>
-      </nav>
-      <ul class="login">
-        <li><a href="#">Sing in</a></li>
-        <li><button class="btn-blue" href="#">Join Waitlist</button></li>
-      </ul>
-      <div id="menu-mobile">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <nav class="navegation-mobile">
-        <a href="#">Plans</a>
-        <a href="#">Find Domain</a>
-        <a href="#">Why Hosterr</a>
-
-        <a href="#">Sing in</a>
-        <button class="btn-blue" href="#">Join Waitlist</button>
-      </nav>
-    </div>
-  </header>
-  <main>
-
-    <div class="container">
-      <section class="content">
-        <h1>Host your website in less than 5 minutes.</h1>
-        <p class="text">With Hosterr, get your website up and running in no less than 5 minutes with the most competitive pricing packages avaliable online.</p>
-        <form action="">
-          <input type="email" name="email" id="email" placeholder="Enter e-mail address" required>
-          <button class="btn-blue" type="button">Join Waitlist</button>
-        </form>
-        <div class="check">
-          <img src="./Assets/Checkmark.svg" alt="">
-          <p class="second-text">No spam,ever. Unsubscribe anytime.</p>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./Assets/Logo.svg" alt="Logo-Menu" />
+          <button class="hiring">Hosterr is hiring!</button>
         </div>
-      </section>
-      <section class="img">
-        <img src="./Assets/img-home.png" alt="">
-      </section>
-    </div>
-
-  </main>
-  <footer class="container">
-    <div class="social">
-      <a href="https://www.linkedin.com/in/ot%C3%A1vio-monteiro-barra-72879621b/" class="second-text">linkedin</a>
-      <a href="https://www.instagram.com/otavio_mbarra/" class="second-text">Instagram</a>
-      <a href="#" class="second-text">GitHub</a>
-    </div>
-    <div class="perfil">
-      <img src="./Assets/Help Avatar.svg" alt="avatar">
-      <div class="talk">
-        <p>Have any questions?</p>
-        <p><strong>Talk to a specialist</strong></p>
+        <nav class="navegation">
+          <a href="#">Plans</a>
+          <a href="#">Find Domain</a>
+          <a href="#">Why Hosterr</a>
+        </nav>
+        <ul class="login">
+          <li><a href="#">Sing in</a></li>
+          <li><button class="btn-blue" href="#">Join Waitlist</button></li>
+        </ul>
+        <nav class="nav">
+          <button
+            class="btn-menu"
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false"
+          >
+            <div id="menu-mobile">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <ul class="menu" id="menu" role="menu">
+            <li><a href="/">Início</a></li>
+            <li><a href="/">Sobre</a></li>
+            <li><a href="/">Contato</a></li>
+            <li><a href="/">Login</a></li>
+            <button class="btn-blue" href="#">Join Waitlist</button>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </header>
+    <main>
+      <div class="container">
+        <section class="content">
+          <h1>Host your website in less than 5 minutes.</h1>
+          <p class="text">
+            With Hosterr, get your website up and running in no less than 5
+            minutes with the most competitive pricing packages avaliable online.
+          </p>
+          <form action="">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter e-mail address"
+              required
+            />
+            <button class="btn-blue" type="button">Join Waitlist</button>
+          </form>
+          <div class="check">
+            <img src="./Assets/Checkmark.svg" alt="" />
+            <p class="second-text">No spam,ever. Unsubscribe anytime.</p>
+          </div>
+        </section>
+        <section class="img">
+          <img src="./Assets/img-home.png" alt="" />
+        </section>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="social">
+        <a
+          href="https://www.linkedin.com/in/ot%C3%A1vio-monteiro-barra-72879621b/"
+          class="second-text"
+          >linkedin</a
+        >
+        <a href="https://www.instagram.com/otavio_mbarra/" class="second-text"
+          >Instagram</a
+        >
+        <a href="#" class="second-text">GitHub</a>
+      </div>
+      <div class="perfil">
+        <img src="./Assets/Help Avatar.svg" alt="avatar" />
+        <div class="talk">
+          <p>Have any questions?</p>
+          <p><strong>Talk to a specialist</strong></p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
