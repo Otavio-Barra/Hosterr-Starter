@@ -11,7 +11,7 @@ body {
 .navegation-mobile {
   display: none;
 }
-#menu-mobile {
+.nav {
   display: none;
 }
 header {
