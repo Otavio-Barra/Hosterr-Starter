@@ -1,7 +1,7 @@
-const navMenu = document.querySelector("#menu-mobile");
-const menuMobile = document.querySelector(".navegation-mobile");
+const nav = document.querySelector(".nav");
+const menuMobile = document.querySelector("#menu-mobile");
 
-navMenu.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  menuMobile.classList.toggle("menu-actived");
+nav.addEventListener("click", () => {
+  nav.classList.toggle("active-menu");
+  menuMobile.classList.toggle("active");
 });
