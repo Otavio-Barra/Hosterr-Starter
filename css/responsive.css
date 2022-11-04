@@ -3,23 +3,39 @@
   header .login {
     display: none;
   }
-  .navegation-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+
+  .menu {
+    display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    top: 8rem;
+    left: 0;
     background-color: var(--bkg-color);
+    text-align: center;
     width: 100%;
-    height: 100%;
-    padding-top: 8rem;
-    transform: translateY(-100%);
-    transition: all 0.5s ease-in-out;
+    height: 0;
+    z-index: 1;
+    visibility: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
   }
-  .navegation-mobile.menu-actived {
-    transform: translateY(0);
+  .menu li {
+    padding: 1rem 0;
+    margin-inline: 1rem;
+    border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+    border-radius: 0;
+  }
+  .menu button {
+    margin: 1rem 0;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+  }
+
+  .nav.active-menu .menu {
+    height: calc(100vh);
+    visibility: visible;
+    overflow-y: auto;
   }
 
   #menu-mobile {
